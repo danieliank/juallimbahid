@@ -1,11 +1,14 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+import icon from "../public/icon.jpeg";
 export default function Home() {
   return (
-    <>
-      <div className="navbar bg-base-100">
+    <div className="snap-y snap-proximity overflow-y-scroll h-screen">
+      {/* Header */}
+      <nav className="navbar bg-base-100 snap-start fixed z-50">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost normal-case text-xl">Juallimbah.id</a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
@@ -39,43 +42,31 @@ export default function Home() {
             </li>
           </ul>
         </div>
-      </div>
-      <div
-        className="hero min-h-screen"
-        style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}
-      >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+      </nav>
+      <div>
+        <section
+          className="hero min-h-screen flex"
+          style={{
+            backgroundImage: `url(/edited_hero_bg.png)`,
+          }}
+        >
+          <div className="ml-[5%] mr-[30%] text-white font-extrabold text-7xl">
+            MEMBANTU PERMASALAHAN LIMBAH KERTAS YANG MENUMPUK !
           </div>
-        </div>
+          <div className="mr-[20%] ml-[30%]"></div>
+        </section>
+        <section className="h-screen flex justify-center items-center bg-yellow-300 snap-start">
+          <h1>About</h1>
+        </section>
+        <section className="h-screen flex justify-center items-center bg-green-300 snap-start">
+          <h1>Why</h1>
+        </section>
+        <section className="h-screen flex justify-center items-center bg-blue-300 snap-start">
+          <h1>Contact</h1>
+        </section>
       </div>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row">
-          <img
-            src="https://placeimg.com/260/400/arch"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
-          </div>
-        </div>
-      </div>
-      
-      <footer className="footer p-10 bg-base-200 text-base-content">
+      {/* Footer */}
+      <footer className="footer p-10 bg-base-200 text-base-content snap-start">
         <div>
           <svg
             width="50"
@@ -115,6 +106,6 @@ export default function Home() {
           <a className="link link-hover">Cookie policy</a>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
