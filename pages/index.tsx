@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import icon from "../public/icon.jpeg";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="snap-y snap-proximity overflow-y-scroll h-screen">
@@ -46,22 +46,36 @@ export default function Home() {
       <div>
         <section
           className="hero min-h-screen flex"
+          id="hero"
           style={{
             backgroundImage: `url(/edited_hero_bg.png)`,
           }}
         >
-          <div className="ml-[5%] mr-[30%] text-white font-extrabold text-7xl">
-            MEMBANTU PERMASALAHAN LIMBAH KERTAS YANG MENUMPUK !
+          <div className="ml-[5%] mr-[30%] text-white font-extrabold text-6xl 2xl:text-7xl">
+            <br />
+            MEMBANTU PERMASALAHAN LIMBAH KERTAS YANG MENUMPUK ! <br></br>
+            {/* <Link href={"#about"}>
+              <button className="btn bg-gray-900">About Us</button>
+            </Link> */}
           </div>
-          <div className="mr-[20%] ml-[30%]"></div>
+          <div className="ml-[30%] mr-[20%]"></div>
         </section>
-        <section className="h-screen flex justify-center items-center bg-yellow-300 snap-start">
+        <section
+          className="h-screen flex justify-center items-center bg-yellow-300 snap-start"
+          id="about"
+        >
           <h1>About</h1>
         </section>
-        <section className="h-screen flex justify-center items-center bg-green-300 snap-start">
+        <section
+          className="h-screen flex justify-center items-center bg-green-300 snap-start"
+          id="why"
+        >
           <h1>Why</h1>
         </section>
-        <section className="h-screen flex justify-center items-center bg-blue-300 snap-start">
+        <section
+          className="h-screen flex justify-center items-center bg-blue-300 snap-start"
+          id="contact_info"
+        >
           <h1>Contact</h1>
         </section>
       </div>
