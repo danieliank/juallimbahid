@@ -8,7 +8,11 @@ module.exports = {
     themes: false,
   },
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins"],
+      },
+    },
   },
   plugins: [require("daisyui")],
 };
