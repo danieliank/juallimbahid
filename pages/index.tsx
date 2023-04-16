@@ -35,7 +35,7 @@ export default function Home() {
             backgroundImage: `url(/edited_hero_bg.png)`,
           }}
         >
-          <div className="ml-[5%] mr-[30%] text-white font-extrabold text-6xl 2xl:text-7xl">
+          <div className="ml-[5%] mr-[30%] text-white font-extrabold text-5xl md:text-6xl 2xl:text-7xl">
             <br />
             MEMBANTU PERMASALAHAN LIMBAH KERTAS YANG MENUMPUK ! <br></br>
             <Link href={"https://wa.me/6281224147030/"}>
